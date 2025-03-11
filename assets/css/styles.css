@@ -1,5 +1,8 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import './work.css'; /* if you're using a build system like Webpack */
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -279,8 +282,7 @@ img {
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-  grid-template-columns: repeat(7, 1fr); /* Adjusted for 7 items per row */
+  grid-template-columns: repeat(7, 1fr); /* 7 items per row */
   gap: 20px;
   margin-top: 30px;
   padding: 50px;
@@ -301,7 +303,9 @@ img {
 }
 
 .skill img {
-  max-width: 80px;
+  width: 80px; /* Set width for uniformity */
+  height: 80px; /* Set height for uniformity */
+  object-fit: contain; /* Ensures aspect ratio is preserved without stretching */
   margin-bottom: 10px;
   display: block;
   margin-left: auto;
@@ -327,7 +331,12 @@ img {
 /* For mobile screens */
 @media screen and (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  }
+
+  .skill img {
+    width: 60px; /* Smaller images on mobile */
+    height: 60px;
   }
 }
 
@@ -335,6 +344,15 @@ img {
 @media screen and (max-width: 480px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+
+  .skill img {
+    width: 50px; /* Further reduced size for very small screens */
+    height: 50px;
+  }
+
+  .skill p {
+    font-size: 0.9rem; /* Adjust text size for smaller screens */
   }
 }
 
@@ -393,7 +411,7 @@ img {
   border-radius: 0.5rem;
 } */
 
-/* ===== WORK =====*/
+/* ===== WORK =====
 .work__container {
   row-gap: 2rem;
 }
@@ -407,7 +425,7 @@ img {
 }
 .work__img img:hover {
   transform: scale(1.1);
-}
+} */
 
 /* ===== CONTACT =====*/
 .contact__input {
