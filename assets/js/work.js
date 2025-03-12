@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const workContainer = document.querySelector(".work__container"); 
+    const workContainer = document.querySelector(".work__container");
 
     const projects = [
         {
@@ -58,13 +58,13 @@ document.addEventListener("DOMContentLoaded", () => {
             company: 'Idea',
             companyLogo: 'https://cdn.brandfetch.io/idN6iTSgKh/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B',
             color: '#ED2740',
-            role: 'Backend Developer',
-            date: 'Jun 2020 - Dec 2020',
-            desc: 'Worked on the backend of various web applications.',
+            role: 'Junior Software Engineer',
+            date: 'Oct 2017 - Nov 2019',
+            desc: 'Contributed to customer management system development, optimized SQL queries, and created REST APIs.',
             descBullets: [
-                'Developed REST APIs with Node.js and Express.',
-                'Worked with MongoDB and MySQL databases.',
-                'Optimized SQL queries for better performance.'
+                'Developed REST APIs for mobile integrations and real-time subscription management.',
+                'Utilized Redis for caching to improve response time and reduce database load.',
+                'Assisted in CI/CD pipeline configuration using Jenkins and Maven.'
             ],
         },
     ];
@@ -140,6 +140,20 @@ document.addEventListener("DOMContentLoaded", () => {
             details.appendChild(bulletList);
 
             workCard.appendChild(details);
+
+            // Add click event to toggle visibility of details
+            workCard.addEventListener('click', () => {
+                // Hide all details first
+                const allDetails = document.querySelectorAll('.experience-text-details');
+                allDetails.forEach(detail => detail.style.display = 'none');
+                
+                // Toggle clicked panel details visibility
+                if (details.style.display === 'none' || details.style.display === '') {
+                    details.style.display = 'block';
+                } else {
+                    details.style.display = 'none';
+                }
+            });
 
             // Append the work card to the work container
             workContainer.appendChild(workCard);
