@@ -4,7 +4,7 @@ const projects = [
         company: "USAA",
         companyLogo: "https://cdn.brandfetch.io/id7nXFaoJg/w/718/h/718/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
         color: '#12385C',
-        role: "Full Stack Software Developer",
+        role: "Software Developer",
         date: "Apr 2024 - Present",
         desc: "",
         descBullets: [
@@ -14,10 +14,10 @@ const projects = [
         ]
     },
     {
-        company: "AMEX",
-        companyLogo: "https://cdn.brandfetch.io/id5WXF6Iyd/theme/dark/idAyOxP8-l.svg?c=1dxbfHSJFAPEGdCLU4o5B",
-        color: '#006FCF',
-        role: "Software Developer",
+        company: "Publicis Sapient",
+        companyLogo: "https://cdn.brandfetch.io/id1a_DBw-1/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
+        color: '#FE414D',
+        role: "Software Engineer",
         date: "Jun 2023 - Apr 2024",
         desc: "",
         descBullets: [
@@ -43,7 +43,7 @@ const projects = [
         company: "OYO Rooms",
         companyLogo: "https://cdn.brandfetch.io/idSXt7tZEr/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
         color: '#EE2A24',
-        role: "Full Stack Developer",
+        role: "Software Developer",
         date: "Dec 2019 - Jan 2021",
         desc: "",
         descBullets: [
